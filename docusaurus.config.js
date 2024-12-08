@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://heiaipika.online',
+  url: 'https://www.heiaipika.online',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -77,11 +77,10 @@ const config = {
       image: 'img/docusaurus-social-card.jpg',
 
       navbar: {
-        title: 'My Site',
         items: [
+          {to: '/', label: 'Home', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/tags', label: 'Tags', position: 'left'},
-          {to: '/about', label: 'About', position: 'left'},
         ],
       },
 
