@@ -1,0 +1,98 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e2e2e;
+  --ifm-color-secondary: #000000;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+ --navbar-link-color: #2e2e2e;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #ffffff;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+ --navbar-link-color: #ffffff;
+}
+
+/* 导航栏全局样式 */
+.navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 导航栏链接样式 */
+.navbar__link,
+.navbar__brand,
+.navbar__title,
+.navbar__item {
+  color: var(--navbar-link-color) !important;
+  font-weight: 500;
+}
+
+.navbar__link:hover,
+.navbar__brand:hover,
+.navbar__title:hover,
+.navbar__item:hover {
+  color: var(--ifm-color-primary-darker) !important;
+}
+
+/* 首页样式 */
+.homepage-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('/static/img/igo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 首页容器透明 */
+.homepage-wrapper {
+  background: transparent !important;
+}
+
+.homepage-wrapper main,
+.homepage-wrapper .main-wrapper,
+.homepage-wrapper #__docusaurus {
+  background: transparent !important;
+}
+
+/* 暗色模式导航栏样式 */
+[data-theme='dark'] .navbar {
+  background: transparent !important;
+}
+
+/* 导航栏下拉菜单样式 */
+.navbar__dropdown-menu {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* 导航栏图标颜色 */
+.navbar-sidebar__brand {
+  color: var(--navbar-link-color);
+}
+
+/* 确保切换主题按钮也使用正确的颜色 */
+.clean-btn {
+  color: var(--navbar-link-color) !important;
+}
+
+.clean-btn:hover {
+  color: var(--ifm-color-primary-darker) !important;
+}
